@@ -1,0 +1,159 @@
+.warrior {
+  background: url("./warrior.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+  animation: walk 2s steps(8, end) infinite;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.attacker {
+  background: url("./attacker.svg") no-repeat;
+  width: 600px;
+  height: 300px;
+  animation: walk2 2s steps(8) 1;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.heals {
+  background: url("./heals.svg") no-repeat;
+  width: 400px;
+  height: 400px;
+  animation: walk 1s steps(8) infinite;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.catMage {
+  background: url("./catMage.svg") no-repeat;
+  width: 600px;
+  height: 600px;
+  animation: walk3 1s steps(8) 1;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+}
+
+.fighter {
+  background: url("./fighter.svg") no-repeat;
+  width: 600px;
+  height: 600px;
+  animation: walk3 1s steps(8) 1;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+}
+
+.mage {
+  background: url("./mage.svg") no-repeat;
+  width: 600px;
+  height: 600px;
+  animation: walk3 1s steps(8) 1;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+}
+
+.beast {
+  background: url("./beast.svg") no-repeat;
+  width: 600px;
+  height: 600px;
+  animation: walk3 1s steps(8) 1;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+}
+
+.minotaur {
+  background: url("./minotaur.svg") no-repeat;
+  width: 900px;
+  height: 600px;
+  animation: walk3 1s steps(8) 1;
+  animation-play-state: paused;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  opacity: 0;
+}
+
+.text {
+  background: url("./text.svg") no-repeat;
+  width: 490px;
+  height: 66px;
+}
+
+@keyframes walk {
+  100% { background-position: 0 -3200px; }
+}
+
+@keyframes walk2 {
+  100% { background-position: 0 -2400px; }
+}
+
+@keyframes walk3 {
+  100% { background-position: 0 -4800px; }
+}
+
+.body{
+  background-color:#5a5b5a;
+}
+
+
+#attackButton{
+  opacity:0;
+}
+
+#healButton{
+  opacity:0;
+}
+
+.fa, .fas{
+  position: absolute;
+  margin-left: 20px;
+  left: 0;
+}
+
+.w3-round{
+  transition: width 2s ease;
+  white-space:nowrap;
+}
+
+.w3-blue{
+  color: #331119 !important;
+  background-color: #93785a !important;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#progressBar{
+  text-align:center;
+  opacity: 0;
+}
+
+.health{
+  font-family: 'Press Start 2P', cursive !important;
+  text-align: center;
+}
+
+.pixel{
+  font-family: 'Press Start 2P', cursive !important;
+}
